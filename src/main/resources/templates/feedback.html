@@ -3,7 +3,8 @@ Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/-->
 <!DOCTYPE html>
-<html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	th:replace="~{base::layout(~{::section})}">
 <head>
 <title>FeedbacK Page</title>
 <!-- custom-theme -->
@@ -14,6 +15,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/-->
 <link href="css/feedback.css" rel="stylesheet" type="text/css" media="all" />
 <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
 </head>
+	<section>
 <body class="agileits_w3layouts">
     <h1 class="agile_head text-center">Feedback Form</h1>
     <div class="w3layouts_main wrap">
@@ -48,7 +50,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/-->
 			<center><input type="submit" value="submit Feedback" class="agileinfo" /></center>
 	  </form>
 	</div>
-	
+	</section>
 </body>
 </html>
 
